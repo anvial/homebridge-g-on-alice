@@ -60,7 +60,8 @@ aliceHome.prototype = {
 };
 
 aliceHome.prototype.didFinishLaunching = function() {
-  var host = 'homebridge.g-on.io';
+  var host = '84.201.136.124';
+//   var host = 'homebridge.g-on.io';
   // var host = 'localhost';
 
   options = {
@@ -73,7 +74,7 @@ aliceHome.prototype.didFinishLaunching = function() {
     pin: this.pin,
     servers: [{
       protocol: 'mqtt',
-      host: host,
+      host: 'homebridge.g-on.io',
       port: 1883
     }]
   };
