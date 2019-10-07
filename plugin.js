@@ -74,10 +74,13 @@ aliceHome.prototype.didFinishLaunching = function() {
     pin: this.pin,
     servers: [{
       protocol: 'mqtt',
-      host: 'homebridge.g-on.io',
+      host: host,
       port: 1883
     }]
   };
+  
+  this.log('OPTIONS!!!');
+  this.log(options);
 
   // Initialize HAP Connections
   aliceActions.hapDiscovery(options);
